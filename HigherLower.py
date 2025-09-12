@@ -1,3 +1,4 @@
+import random
 def Help():
     print("""A random number is chosen depending on your preferred difficulty level.
         
@@ -12,3 +13,19 @@ print("Welcome to Higher or Lower. Would you like to read the rules?")
 ans=input("Enter your response here >> ").upper
 if ans=="Y" or "YES":
     Help()
+
+print("""Which difficulty do you want?
+1. Easy
+2. Medium
+3. Hard""")
+ans=input("Enter your answer here >>")
+match ans:
+    case 1:
+        selectNum=random.randint(1,20)
+        attempts=3
+    case 2:
+        selectNum=random.randint(1,40)
+        attempts=5
+    case 3:
+        selectNum=random.randint(1,100)
+        attempts=7
