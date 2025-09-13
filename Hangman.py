@@ -15,7 +15,6 @@ while finWord==False:
       missLet+=1
 
   if missLet==0:
-    finWord=True
     print(f"\nWell done! The word was {chosenWord}")
   elif attempts==0:
     print(f"Bad Luck! The word was {chosenWord}.")
